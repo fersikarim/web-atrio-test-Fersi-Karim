@@ -1,0 +1,10 @@
+<app-candidate></app-candidate>
+<ng-container *ngFor="let progress of progressBarList">
+    <app-progress-bar [title]="progress.title" [percent]="progress.value">
+    </app-progress-bar>
+</ng-container>
+<br><br>
+
+<button class="btn" (click)="reset()">Remettre a zero les compteurs</button>
+<button class="btn" (click)="add(5)">Ajouter 5%</button>
+<button class="btn" (click)="add(10)">Ajouter 10%</button>

@@ -1,0 +1,12 @@
+<div class="progress-bar-card">
+    <span class="progress-title">{{ title }}</span>
+    <div class="progress-container">
+      <span class="progress-percent"> {{ percent + '%' }} </span>
+      <div #progressBar
+        class="progress-wrap progress"
+        [style.backgroundColor]="bgColor" >
+        <div class="progress-bar progress" [style.left.px]="progressTotal"></div>
+      </div>
+    </div>
+  </div>
+  
